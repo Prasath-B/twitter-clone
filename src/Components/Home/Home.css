@@ -1,0 +1,17 @@
+.home{
+    position: relative;
+    left: 26.5%;
+    height: 100vh;
+    margin-right: 57%;
+}
+@media screen and (max-width: 700px)  {
+    .home{
+        margin-right: 30%;
+    }
+}
+@media screen and (max-width: 550px){
+    .home{
+        left: 0;
+        margin-right: 0;
+    }
+}

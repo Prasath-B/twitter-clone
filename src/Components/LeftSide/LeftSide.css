@@ -1,0 +1,78 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+.leftside{
+    width: 26.5%;
+    height: 100vh;
+    border-right: 0.2px solid rgba(128, 128, 128, 0.222);
+    position: fixed;
+}
+.leftside ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100vh;
+    padding-left: 40%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    
+}
+.leftside ul li {
+    width: 170px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.leftside ul li:hover {
+    background-color: rgba(128, 128, 128, 0.551);
+    cursor: pointer;
+}
+.icons{
+    padding-right: 15px;
+}
+.btn-tweet{
+    background-color: rgb(29, 155, 240);
+    border-radius: 25px;
+    padding: 10px;
+    width: 170px;
+    height: 45px;
+    border: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width : 1100px) {
+    .btn-tweet{
+        width: 120px;
+        height: 35px;
+        padding-top: 3px;
+    }
+    .leftside ul{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .leftside ul{
+        padding-left: 25%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .leftside ul {
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width: 550px){
+    .leftside{
+        display: none;
+    }
+}
